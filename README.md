@@ -1,2 +1,3 @@
 # game-pedal
-Buidling an accelerator pedai with an Arduino micro and a sewing machine pedal
+
+An accelerator and brake pedals for racing vode game using an Arduino micro and sewing machine pedals.
