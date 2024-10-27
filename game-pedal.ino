@@ -1,9 +1,3 @@
-// https://www.youtube.com/watch?v=xoqoUR1JBr8
-// https://www.partsnotincluded.com/how-to-emulate-an-xbox-controller-with-arduino-xinput/
-// https://www.reddit.com/r/arduino/comments/1b9cq62/using_arduino_micro_as_a_game_controller_confused/
-// https://github.com/MHeironimus/ArduinoJoystickLibrary
-
-
 #include <Joystick.h>
 
 Joystick_ Joystick(
@@ -45,8 +39,8 @@ void loop() {
   int acceleratorValue = analogRead(acceleratorPin);
   int brakeValue = analogRead(brakePin);
   int adaptedBrakeValue = adaptBrakeValue(brakeValue);
-  
-  if (DEBUG) { 
+
+  if (DEBUG) {
     char buffer[50];
     sprintf(buffer, "Accelerator: %d - Brake %d (original: %d)", acceleratorValue, adaptedBrakeValue, brakeValue);
     Serial.println(buffer);
